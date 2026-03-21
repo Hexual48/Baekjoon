@@ -1,0 +1,10 @@
+string aStr = Console.ReadLine();
+string bStr = Console.ReadLine();
+string cStr = Console.ReadLine();
+int a = int.Parse(aStr);
+int b = int.Parse(bStr);
+int c = int.Parse(cStr);
+Console.WriteLine(a + b - c);
+string ab = aStr + bStr;
+long sum = int.Parse(ab) - c;
+Console.WriteLine(sum);
