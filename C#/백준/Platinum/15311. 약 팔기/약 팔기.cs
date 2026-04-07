@@ -1,17 +1,18 @@
+using System.Text;
+
 int n = int.Parse(Console.ReadLine());
-        
-List<int> result = new List<int>();
-        
+StringBuilder sb = new StringBuilder();
+
+Console.WriteLine(2000);
+
 for (int i = 0; i < 1000; i++)
 {
-    result.Add(1);
+    sb.Append("1 ");
 }
-        
+
 for (int j = 0; j < 1000; j++)
 {
-    result.Add(1000);
+    sb.Append("1000 ");
 }
-        
-Console.Write(result.Count+"\n");
-        
-Console.Write(string.Join(" ", result)+"\n");
+
+Console.WriteLine(sb.ToString().TrimEnd());
